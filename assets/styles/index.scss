@@ -19,7 +19,7 @@ body {
 
 .jumbotron-billboard .img {
   margin-bottom: 0;
-  opacity: .5;
+  opacity: .8;
   color: #fff;
   background: #000 url("https://i.imgur.com/BKfY2Kx.jpg") center center;
   width: 100%;
@@ -33,12 +33,14 @@ body {
 }
 
 .jumbotron {
+  color: #fff;
   position: relative;
   // padding: 50px;
 }
 
 //z-index allows this div to be in front of img div and not be affected by opacity
 .jumbotron .container {
+  color: #fff;
   position: relative;
   z-index: 2;
 }
