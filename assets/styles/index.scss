@@ -1,5 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'colors';
 
 article {
   font-size: 20px;
@@ -8,37 +9,33 @@ article {
 }
 
 body {
-  background-color: #a0b5d8;
+  background-color: $light-blue;
 }
-// .jumbotron {
-//   background-image: url(https://i.imgur.com/BKfY2Kx.jpg);
-//   background-size: cover;
-//   // color: #ffa500;
-//   opacity: .65;
-// }
 
 .jumbotron-billboard .img {
-  margin-bottom: 0;
-  opacity: .5;
-  color: #fff;
-  background: #000 url("https://i.imgur.com/BKfY2Kx.jpg") center center;
-  width: 100%;
-  height: 100%;
+  background: $black url('/../lib/images/AisleanMisti.jpg') center center;
   background-size: cover;
+  color: $white;
+  height: 100%;
+  left: 0;
+  margin-bottom: 0;
+  opacity: .8;
   overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
   z-index: 1;
 }
 
 .jumbotron {
+  color: $white;
   position: relative;
   // padding: 50px;
 }
 
 //z-index allows this div to be in front of img div and not be affected by opacity
 .jumbotron .container {
+  color: $white;
   position: relative;
   z-index: 2;
 }
@@ -48,11 +45,11 @@ body {
 }
 
 .jumbo2 {
-  background-color: #264270;
-  color: #fff;
+  background-color: $dark-blue;
+  color: $white;
 }
 
 .navbar {
-  background-color: #264270;
-  color: #fff;
+  background-color: $dark-blue;
+  color: $white;
 }
