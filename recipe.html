@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <title>Example</title>
+  <title>AHCC Recipes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
+
   <!-- Do not add `link` tags unless you know what you are doing -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
@@ -16,38 +16,17 @@
 <body class="container-fluid">
     <div>
       <h1>Asheville Homeschool Culture Club</h1>
-      <h3>Members Area Location and Schedule</h3>
+      <h3>Members Area Recipes</h3>
     </div>
-    <br/>
-    <br/>
 <div class="container">
   <div class="row">
-    <div id="map" style="height:500px" class="col-12 col-md-6">
-        <!-- <div  style="width:600px;height:600px;background:yellow"></div> -->
+    <div class="col-12 col-offset-2 col-md-12">
 
-      <script>
+      <div>
+        <article>
 
-      var map;
-      function myMap() {
-        var pin = {lat: 35.577312, lng: -82.632735};
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: {lat: 35.580745, lng: -82.589104}, zoom: 12
-        };
-        map = new google.maps.Map(mapCanvas, mapOptions);
-
-        var marker = new google.maps.Marker({
-          position: pin,
-          map: map
-        });
-      }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_KLXrTQoFtuo1BesvgoNY37_NON0ThIQ&callback=myMap" async defer></script>
-    </div>
-    <div class="col-12 col-md-6">
-      <p>Asheville Homeschool Culture Club meets at:</p>
-      <p>240 Blah Blah Street</p>
-      <p>West Asheville, NC 28801</p>
+        </article>
+      </div>
     </div>
   </div>
 </div>
@@ -64,11 +43,11 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="chat.html">Chat</a></li>
+          <li><a href="members.html">Chat</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="FAQs.html">FAQs</a></li>
-          <li><a href="Location.html">Location</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="location.html">Location/Schedule</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log-out</a></li>
