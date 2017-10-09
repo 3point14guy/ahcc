@@ -2,35 +2,102 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'colors';
 
+.active1 {
+background-color: $darkest-blue;
+}
+
 article {
+  color: $white;
   font-size: 20px;
-  height: 200px;
   text-align: justify;
 }
 
 body {
-  background-color: $light-blue;
+  background-color: $dark-blue;
+  color: $white;
 }
 
-.jumbotron-billboard .img {
-  background: $black url('/../lib/images/AisleanMisti.jpg') center center;
+.parallax {
+  // /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  // /* The image used */
+  background-image: url('/../lib/images/girl1-preso.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
+  // /* Set a specific height */
+  min-height: 250px;
+}
+
+.parallax2 {
+  background-attachment: fixed;
+  background-image: url('/../lib/images/hula-dancing.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+.parallax3 {
+  background-attachment: fixed;
+  background-image: url('/../lib/images/jeopardy-preso.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 250px;
+}
+
+// .parallax-flag {
+//   background-attachment: fixed;
+//   // background-image: url('/../lib/images/jeopardy-preso.jpg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   min-height: 250px;
+// }
+
+// .back-img {
+//   background-color: $light-blue;
+//   background-image: url('/../lib/images/girl1-preso.jpg');
+//   background-size: cover;
+//   color: $white;
+//   height: 100%;
+//   left: 0;
+//   margin-bottom: 0;
+//   margin-top: 0;
+//   opacity: .8;
+//   overflow: hidden;
+//   padding-bottom: 180px;
+//   position: relative;
+//   top: -90px;
+//   width: 100%;
+//   z-index: 1;
+// }
+
+// .jumbotron-billboard .img {
+//   background: $black url('/../lib/images/AisleanMisti.jpg') center center;
+//   background-size: cover;
+//   color: $white;
+//   height: 100%;
+//   left: 0;
+//   margin-bottom: 0;
+//   opacity: .8;
+//   overflow: hidden;
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   z-index: 1;
+// }
+
+.signature {
   color: $white;
-  height: 100%;
-  left: 0;
-  margin-bottom: 0;
-  opacity: .8;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  font-size: 14px;
+  text-align: center;
 }
 
 .jumbotron {
   color: $white;
   position: relative;
-  // padding: 50px;
 }
 
 //z-index allows this div to be in front of img div and not be affected by opacity
@@ -45,11 +112,46 @@ body {
 }
 
 .jumbo2 {
-  background-color: $dark-blue;
+  background-color: $darkest-blue;
+  border: 1px solid $light-blue;
   color: $white;
+  top: 20px;
 }
 
 .navbar {
   background-color: $dark-blue;
   color: $white;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+// /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+   }
 }
