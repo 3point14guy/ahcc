@@ -2,6 +2,10 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'colors';
 
+.active1 {
+background-color: $darkest-blue;
+}
+
 article {
   color: $white;
   font-size: 20px;
@@ -10,6 +14,7 @@ article {
 
 body {
   background-color: $dark-blue;
+  color: $white;
 }
 
 .parallax {
@@ -110,6 +115,7 @@ body {
   background-color: $darkest-blue;
   border: 1px solid $light-blue;
   color: $white;
+  top: 20px;
 }
 
 .navbar {
