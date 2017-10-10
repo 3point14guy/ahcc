@@ -18,6 +18,10 @@ body {
   z-index: 2;
 }
 
+.lead {
+  font-weight: bolder;
+}
+
 .parallax {
   // /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -35,10 +39,10 @@ body {
 .parallax2 {
   background-attachment: fixed;
   background-image: url('/../lib/images/hula-dancing.jpg');
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .parallax3 {
@@ -47,7 +51,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .parallax4 {
@@ -108,10 +112,6 @@ body {
   color: $white;
   position: relative;
   z-index: 2;
-}
-
-.lead {
-  font-weight: bolder;
 }
 
 .jumbo2 {
