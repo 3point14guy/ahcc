@@ -7,14 +7,15 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 article {
-  color: $white;
-  font-size: 20px;
   text-align: justify;
 }
 
 body {
   background-color: $dark-blue;
   color: $white;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .parallax {
@@ -26,7 +27,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   // /* Set a specific height */
-  min-height: 250px;
+  min-height: 350px;
+  position: relative;
+  z-index: -1;
 }
 
 .parallax2 {
@@ -47,14 +50,14 @@ body {
   min-height: 250px;
 }
 
-// .parallax-flag {
-//   background-attachment: fixed;
-//   // background-image: url('/../lib/images/jeopardy-preso.jpg');
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   min-height: 250px;
-// }
+.parallax4 {
+  background-attachment: fixed;
+  background-image: url('/../lib/images/argentina-pot-luck.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+}
 
 // .back-img {
 //   background-color: $light-blue;
