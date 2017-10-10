@@ -3,7 +3,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import 'colors';
 
 .active1 {
-background-color: $darkest-blue;
+  background-color: $darkest-blue;
 }
 
 article {
@@ -123,35 +123,75 @@ body {
   color: $white;
 }
 
-/* Create four equal columns that floats next to each other */
+// /* Create four equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
+  float: left;
+  padding: 10px;
+  width: 25%;
 }
 
 .column img {
-    margin-top: 12px;
-    width: 100%;
+  margin-top: 12px;
+  width: 100%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+// /* Clear floats after the columns */
+.row::after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 // /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .column {
-        width: 50%;
+  .column {
+    width: 50%;
     }
 }
 
 // /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-    .column {
-        width: 100%;
+  .column {
+    width: 100%;
    }
 }
+
+.icon-scroll,
+.icon-scroll::before {
+  position: absolute;
+  right: 40%;
+}
+
+.icon-scroll {
+  border-radius: 25px;
+  box-shadow: inset 0 0 0 1px $white;
+  height: 70px;
+  // margin-left: -20px;
+  margin-top: -110px;
+  top: 50%;
+  width: 40px;
+}
+
+.icon-scroll::before {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  background: $white;
+  border-radius: 4px;
+  content: '';
+  height: 8px;
+  margin-left: -4px;
+  top: 8px;
+  width: 8px;
+}
+
+@keyframes
+scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {opacity: 0;
+    transform: translateY(46px);
+  }
+  }
