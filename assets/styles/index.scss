@@ -10,6 +10,10 @@ article {
   text-align: justify;
 }
 
+.headers {
+  color: $light-slate-gray;
+}
+
 body {
   background-color: $dark-blue;
   color: $white;
@@ -18,8 +22,8 @@ body {
   z-index: 2;
 }
 
-.lead {
-  font-weight: bolder;
+.table-notes {
+  font-size: 12px;
 }
 
 .parallax {
@@ -97,7 +101,7 @@ body {
 // }
 
 .signature {
-  color: $white;
+  color: $light-slate-gray;
   font-size: 14px;
   text-align: center;
 }
@@ -124,6 +128,18 @@ body {
 .navbar {
   background-color: $dark-blue;
   color: $white;
+}
+
+.dropbtn {
+  background-color: $light-slate-gray;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 0, .3);
+  color: $dark-blue;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 3px 0;
+  padding: 5px 9px;
 }
 
 // /* Create four equal columns that floats next to each other */
@@ -167,7 +183,7 @@ body {
 
 .icon-scroll {
   border-radius: 25px;
-  box-shadow: inset 0 0 0 1px $white;
+  box-shadow: inset 0 0 0 1px $light-slate-gray;
   height: 70px;
   // margin-left: -20px;
   margin-top: -110px;
@@ -179,7 +195,7 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: scroll;
-  background: $white;
+  background: $light-slate-gray;
   border-radius: 4px;
   content: '';
   height: 8px;
