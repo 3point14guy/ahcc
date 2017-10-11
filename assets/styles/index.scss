@@ -2,6 +2,13 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'colors';
 
+a {
+  color: $light-slate-gray;
+  &:hover {color: $light-blue;}
+  &:visited {color: $darkest-blue;}
+}
+
+
 .active1 {
   background-color: $darkest-blue;
 }
@@ -10,12 +17,20 @@ article {
   text-align: justify;
 }
 
+.headers {
+  color: $light-slate-gray;
+}
+
 body {
   background-color: $dark-blue;
   color: $white;
   font-size: 20px;
   position: relative;
   z-index: 2;
+}
+
+.table-notes {
+  font-size: 12px;
 }
 
 .parallax {
@@ -35,10 +50,10 @@ body {
 .parallax2 {
   background-attachment: fixed;
   background-image: url('/../lib/images/hula-dancing.jpg');
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .parallax3 {
@@ -47,7 +62,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .parallax4 {
@@ -59,59 +74,23 @@ body {
   min-height: 350px;
 }
 
-// .back-img {
-//   background-color: $light-blue;
-//   background-image: url('/../lib/images/girl1-preso.jpg');
-//   background-size: cover;
-//   color: $white;
-//   height: 100%;
-//   left: 0;
-//   margin-bottom: 0;
-//   margin-top: 0;
-//   opacity: .8;
-//   overflow: hidden;
-//   padding-bottom: 180px;
-//   position: relative;
-//   top: -90px;
-//   width: 100%;
-//   z-index: 1;
-// }
-
-// .jumbotron-billboard .img {
-//   background: $black url('/../lib/images/AisleanMisti.jpg') center center;
-//   background-size: cover;
-//   color: $white;
-//   height: 100%;
-//   left: 0;
-//   margin-bottom: 0;
-//   opacity: .8;
-//   overflow: hidden;
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   z-index: 1;
-// }
-
 .signature {
-  color: $white;
+  color: $light-slate-gray;
   font-size: 14px;
+  margin-left: 53px;
   text-align: center;
 }
 
+//z-index allows this div to be in front of img div and not be affected by opacity
 .jumbotron {
   color: $white;
   position: relative;
-}
 
-//z-index allows this div to be in front of img div and not be affected by opacity
-.jumbotron .container {
-  color: $white;
-  position: relative;
-  z-index: 2;
-}
-
-.lead {
-  font-weight: bolder;
+  &.container {
+    color: $white;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .jumbo2 {
@@ -126,23 +105,37 @@ body {
   color: $white;
 }
 
+.dropbtn {
+  background-color: $light-slate-gray;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 0, .3);
+  color: $dark-blue;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 3px 0;
+  padding: 5px 9px;
+}
+
 // /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   padding: 10px;
   width: 25%;
-}
 
-.column img {
-  margin-top: 12px;
-  width: 100%;
+  &img {
+    margin-top: 12px;
+    width: 100%;
+}
 }
 
 // /* Clear floats after the columns */
-.row::after {
-  clear: both;
-  content: '';
-  display: table;
+.row {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+}
 }
 
 // /* Responsive layout - makes a two column-layout instead of four columns */
@@ -167,11 +160,11 @@ body {
 
 .icon-scroll {
   border-radius: 25px;
-  box-shadow: inset 0 0 0 1px $white;
+  box-shadow: inset 0 0 0 1px $light-slate-gray;
   height: 70px;
   // margin-left: -20px;
   margin-top: -110px;
-  top: 50%;
+  // top: 50%;
   width: 40px;
 }
 
@@ -179,11 +172,11 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: scroll;
-  background: $white;
+  background: $light-slate-gray;
   border-radius: 4px;
   content: '';
   height: 8px;
-  margin-left: -4px;
+  // margin-left: -4px;
   top: 8px;
   width: 8px;
 }
