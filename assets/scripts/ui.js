@@ -11,20 +11,17 @@ const signUpSuccess = (data) => {
 }
 const signUpFailure = (error) => {
   $('.sign-up-message').text('There was an error creating the account. ', error).fadeIn('fast').delay(2000).fadeOut('slow')
+  $('.form-clear').trigger('reset')
+  // hides modal after submit button is selected
+  $('#submit-register').modal('hide')
 }
 
 const signInSuccess = (data) => {
   // on user sign in, capture user info and assign it to store
   store.user = data.user
-  // $('.menu-button').show()
-  // $('.display').show()
   $('.form-clear').trigger('reset')
-  // $('.instructions').show()
-  // $('.instructions').text(data.user.email + ' You have successfully logged in.')
-  // $('.login-buttons').hide(1700)
   $('#submit-login').modal('hide')
-  // $('.title-top').show()
-  // $('.bugCarousel').hide()
+  window.location.href = 'http://localhost:7165/members.html'
 }
 const signInFailure = (error) => {
   $('.login-message').text('Login failure. ', error).fadeIn('fast').delay(2000).fadeOut('slow').modal('hide')
@@ -46,7 +43,7 @@ const logoutSuccess = function () {
   // $('.instructions').text('Please login to continue.')
   // $('.login-buttons').show(900)
   // $('.login-screen').show()
-  // $('#log-out').modal('hide')
+  $('#log-out').modal('hide')
   // $('.menu-button').hide()
   // $('.bugCarousel').show()
 }
