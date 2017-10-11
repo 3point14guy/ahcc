@@ -122,21 +122,21 @@ body {
   float: left;
   padding: 10px;
   width: 25%;
+}
 
-  &img {
-    margin-top: 12px;
-    width: 100%;
+.column img {
+  margin-top: 12px;
+  width: 100%;
 }
-}
+
 
 // /* Clear floats after the columns */
-.row {
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
+.row::after {
+  clear: both;
+  content: '';
+  display: table;
 }
-}
+
 
 // /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
